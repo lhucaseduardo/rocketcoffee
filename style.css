@@ -1,11 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    outline: 0;
     box-sizing: border-box;
 }
-
-/* header */
 
 a {
     text-decoration: none;
@@ -17,75 +14,78 @@ ul {
 
 button {
     cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
+
+/* head */
 
 header {
-    display: flex;
-    justify-content: center;
-    height: 100px;
-    background-color: black;
-}
-
-body {
-    background-color: black;
+    /* height: 15vh; */
+    height: 130px;
+    border: 2px solid yellow;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 221px;
-
-    width: 980px;
-    height: 50px;
-    /* border: 2px solid red; */
+    margin: 40px 221px;
+    border: 2px solid red;
 }
 
-.buttonCoffee {
-    background-color: black;
-    border: 2px solid #8257E5;
-    color: white;
-    font-family: Manrope;
-    font-weight: 400;
-    padding: 11px 38px;
-    border-radius: 6px;
+.logo {
+    margin-right: 10%;
+    z-index: 3;
 }
 
+.headerMenu {
+    display: flex;
+    gap: 50px;
+    z-index: 3;
+}
 .buttonMenu {
-    border: none;
-    background-color: black;
     color: white;
     font-family: Manrope;
-    font-weight: 700;
+    font-size: 14;
+    font-weight: 400;
+}
+
+.buttonHeader {
+    color: white;
+    font-family: Manrope;
     font-size: 11;
+    font-weight: 700;
+    padding: 8px 40px;
+    border: 1px solid #8257E5;
+    border-radius: 7px;
+
+    z-index: 3;
 }
 
 /* body */
 
-.headerMenu {
-    display: flex;
-    margin-left: 10px;
-    gap: 60px;
+body {
+    background-color: black;
+    overflow-x: hidden;
 }
 
-.textos {
-    margin-top: 40px;
+.textContainer {
+    border: 1px solid darkmagenta;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
 }
 
 .text {
     font-family: Manrope;
+    font-size: 40px;
     font-weight: 700;
-    font-size: 30px;
     color: white;
 }
 
 .texto {
-    font-size: 60px;
-    font-weight: 800;
     color: black;
     text-shadow:
        1px 1px 0 #8257E5,
@@ -93,31 +93,55 @@ nav {
       1px -1px 0 #8257E5,
       -1px 1px 0 #8257E5,
        1px 1px 0 #8257E5;
-    /* text-shadow: -1px -3px #8257E5; */
-    /* -webkit-text-stroke-width: 1px; */
-    /* -webkit-text-stroke-color: #8257E5;  */
-    /* -webkit-text-fill-color: black */
 }
 
-.assetsBlurTop {
+.imageBlurTop {
     position: absolute;
     top: 0;
     right: 0;
-    height: 100%;
+    height: 100vh;
+    z-index: -1;
 }
 
-.assetsBlurBot {
+.imageBlurBottom {
     position: absolute;
     bottom: 0;
-    left: 0;
+    z-index: -1;
 }
 
-.containerImgCoffee {
+.imagem {
+    border: 1px solid blue;
     display: flex;
     justify-content: center;
 }
 
-.imgCoffee {
-    height: 330px;
-    width: 700px;
+.imageCoffee {
+    border: 2px solid orangered;
+    height: 55%;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width: 576px){
+
+    
+}
+
+@media (max-width: 768px){
+
+    
+}
+
+@media (max-width: 992px){
+
+    
+}
+
+@media (max-width: 1200px){
+
+}
+
+@media (max-width: 1400px){
+
 }
