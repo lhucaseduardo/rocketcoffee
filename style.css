@@ -159,7 +159,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 70vh;
+        height: 75vh;
         /* border: 2px solid yellow; */
         padding: 0 30%;
     }
@@ -191,7 +191,7 @@ body {
 
     .buttonMain {
         /* border: 2px solid green; */
-        height: 20vh;
+        height: 10vh;
         width: 100vw;
         display: flex;
         justify-content: center;
@@ -210,13 +210,13 @@ body {
     }
 
     .imageCoffeeContainer {
-        border: 2px solid green;
+        /* border: 2px solid green; */
         width: 100vw;
         justify-content: center;
     }
 
     .imageCoffee {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         width: 100%;
     }
 
@@ -230,7 +230,7 @@ body {
 
 @media (max-width: 768px){
     .textContainer {
-        margin-bottom: 10vh;
+        /* margin-bottom: vh; */
     }
 
     .imageCoffeeContainer {
@@ -238,6 +238,8 @@ body {
     }
 
     .imageCoffee {
-        
+        object-fit:cover;
+        height: 60vh;
+        width: 100%;
     }
 }
