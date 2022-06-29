@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,10 +15,13 @@
 </head>
 <body>
     <header>
+        <div class="logoMDiv">
+            <img class="logoMobile" src="assets/logo-mobile.svg" alt="">
+        </div>
+        <div class="logodiv scale-up-center">
+            <a href="index.html"><img class="logo" src="assets/logo-desktop.svg" alt=""></a>
+        </div>
         <nav>
-            <div class="logodiv">
-                <a href="index.html"><img class="logo" src="assets/logo-desktop.svg" alt=""></a>
-            </div>
             <ul class="headerMenu">
                 <li><button class="buttonMenu">Home</button></li>
                 <li><button class="buttonMenu">Menu</button></li>
@@ -24,18 +29,26 @@
                 <li><button class="buttonMenu">Gift Cards</button></li>
                 <li><button class="buttonMenu">Lojas</button></li>
             </ul>
-            <button class="buttonHeader">PEGAR MEU CAFÉ</button>
+                <button class="buttonHeader">PEGAR MEU CAFÉ</button>
         </nav>
     </header>
     <main>
-        <div class="textContainer">
+        <div class="divTextMobile">
+            <span class="textMobile">O café que fará seu código decolar para o próximo nível.</span>
+        </div>
+        <div class="buttonMain">
+            <button class="buttonMobile">PEGAR MEU CAFÉ</button>
+        </div>
+        <div class="textContainer scale-up-center">
             <span class="text">Great Coffee</span>
             <span class="text texto">&lt; Great Code &frasl; &gt;</span>
         </div>
         <img class="imageBlurTop" src="assets/blur-2.png" alt="">
         <img class="imageBlurBottom" src="assets/blur-1.png" alt="">
-        <img class="imageCoffee" src="assets/rocket-coffee.png" alt="">  
+        <div class="imageCoffeeContainer">
+            <img class="imageBlurMobile" src="assets/blur-mobile.png" alt="">
+            <img class="imageCoffee" src="assets/rocket-coffee.png" alt=""> 
+        </div>
     </main>
-    font-size: 50px;
 </body>
 </html>

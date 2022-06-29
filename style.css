@@ -1,61 +1,68 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
-button {
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-}
-
-/* head */
-
 header {
-    border: 2px solid yellow;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 20vh;
 }
 
 nav {
-    border: 2px solid red;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    /* border: 2px solid red; */
+}
+
+.logoMDiv {
+    display: none;
+}
+
+.divTextMobile {
+    display: none;
+}
+
+.textMobile {
+    display: none;
+}
+
+.buttonMain {
+    display: none;
+}
+
+.buttomMobile {
+    display: none;
 }
 
 .logo {
     z-index: 3;
+    margin-right: 140px;
 }
 
 .headerMenu {
     display: flex;
     z-index: 3;
+    gap: 32px;
 }
+
 .buttonMenu {
     color: white;
     font-family: Manrope;
     font-weight: 400;
+    font-size: 14px;
 }
 
 .buttonHeader {
     color: white;
     font-family: Manrope;
     font-weight: 700;
+    font-size: 11px;
     border: 1px solid #8257E5;
     border-radius: 7px;
+    height: 37px;
+    width: 172px;
 
     z-index: 3;
+
+    margin-left: 130px;
 }
 
 /* body */
@@ -66,16 +73,18 @@ body {
 }
 
 .textContainer {
-    border: 1px solid darkmagenta;
+    /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 25vh;
 }
 
 .text {
     font-family: Manrope;
     font-weight: 700;
     color: white;
+    font-size: 70px;
 }
 
 .texto {
@@ -102,180 +111,133 @@ body {
     z-index: -1;
 }
 
+.imageCoffeeContainer {
+    /* border: 2px solid purple; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 55vh;
+    /* flex-grow: 1; */
+}
+
 .imageCoffee {
-    border: 2px solid orangered;
-    width: 100%;
+    /* border: 2px solid yellow; */
     object-fit: contain;
-    position: absolute;
-    bottom: 0;
+    height: 100%;
+    width: auto;
+    position: relative;
 }
 
-@media (max-width: 2560px){
-    header {
-        width: 100vw;
-        height: 20vh;
-    }
-
-    nav {
-        height: 50%;
-        width: 95vw;
-        gap: 6rem;
-    }
-
-    .logo {
-        height: 8em;
-        max-width: 8em;
-    }
-
-    .headerMenu {
-        gap: 7em;
-    }
-
-    .buttonMenu {
-        font-size: 2em;
-    }
-
-    .buttonHeader {
-        padding: 0.5em 3.5em;
-        font-size: 2em;
-    }
-
-    .textContainer {
-        padding: 0.1em;
-        font-size: 7.5em;
-    }
-
-    .text {
-        font-size: 1em;
-    }
-
-    .imageCoffee {
-        max-height: 55%;
-
-    }
+.imageBlurMobile {
+    display: none;
 }
 
-@media (max-width: 1920px){
-    header {
-        width: 100vw;
-        height: 20vh;
-    }
-
+@media (max-width: 997px){
     nav {
-        height: 50%;
-        width: 95vw;
-        gap: 4rem;
+        display: none;
     }
 
-    .logonav {
-        margin-right: 50px;
-    }
-
-    .logo {
-        height: 6em;
-        max-width: 6em;
-    }
-
-    .headerMenu {
-        gap: 5em;
-    }
-
-    .buttonMenu {
-        font-size: 1.7em;
-    }
-
-    .buttonHeader {
-        padding: 0.4em 3em;
-        font-size: 1.7em;
-    }
-
-    .textContainer {
-        padding: 0.1em;
-        font-size: 5.6em;
-    }
-
-    .text {
-        font-size: 1em;
-    }
-
-    .imageCoffee {
-        max-height: 55%;
-    }
-}
-
-@media (max-width: 1600px){
     header {
-        width: 100vw;
-        height: 20vh;
-    }
-
-    nav {
-        height: 50%;
-        width: 95vw;
-        gap: 3rem;
+        /* border: 2px solid red; */
+        height: 90px;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .logodiv {
-        margin-right: 50px;
-    }
-
-    .logo {
-        height: 5em;
-        max-width: 5em;
-    }
-
-    .headerMenu {
-        gap: 5em;
-    }
-
-    .buttonMenu {
-        font-size: 1.4em;
-    }
-
-    .buttonHeader {
-        padding: 0.4em 3em;
-        font-size: 1.4em;
-    }
-
-    .textContainer {
-        padding: 0.1em;
-        font-size: 4.7em;
-    }
-
-    .text {
-        font-size: 1em;
-    }
-
-    .imageCoffee {
-        max-height: 55%;
-    }
-}
-
-@media (max-width: 1366px){
-  
-}
-
-@media (max-width: 1280px){
-  
-}
-
-@media (max-width: 768px){
-    nav {
         display: none;
-    }    
+    }
+
+    .logoMDiv {
+        display: flex;
+        margin-left: 20px;
+        height: 45%;
+        /* border: 2px solid blue; */
+    }
+
+    .divTextMobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+        /* border: 2px solid yellow; */
+        padding: 0 30%;
+    }
+
+    .textMobile {
+        /* border: 2px solid darkorchid; */
+        display: block;
+        text-align: center;
+        min-width: 360px;
+        max-width: 360px;
+        color: white;
+        font-family: Manrope;
+        font-weight: 800px;
+        font-size: 30px;
+        
+    }
+
+    .imageBlurTop {
+        display: none;
+    }
+
+    .imageBlurBottom {
+        display: none;
+    }
 
     .text {
         font-size: 50px;
     }
 
-    .imageCoffee {
-        max-height: 40%;
+    .buttonMain {
+        /* border: 2px solid green; */
+        height: 20vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
 
+    .buttonMobile {
+        display: block;
+        color: white;
+        font-family: Manrope;
+        font-weight: 700;
+        font-size: 11px;
+        border: 1px solid #8257E5;
+        border-radius: 7px;
+        height: 37px;
+        width: 172px;
+    }
+
+    .imageCoffeeContainer {
+        border: 2px solid green;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .imageCoffee {
+        border: 2px solid red;
+        width: 100%;
+    }
+
+    .imageBlurMobile {
+        display: block;
+        position: absolute;
+        width: 100vw;
     }
 
 }
 
-@media (max-width: 576px){
+@media (max-width: 768px){
+    .textContainer {
+        margin-bottom: 10vh;
+    }
 
-    
+    .imageCoffeeContainer {
+        height: auto;
+    }
+
+    .imageCoffee {
+        
+    }
 }
