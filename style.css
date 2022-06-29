@@ -192,7 +192,7 @@ body {
 
     .buttonMain {
         /* border: 2px solid green; */
-        height: 20vh;
+        height: 15vh;
         width: 100vw;
         display: flex;
         justify-content: center;
@@ -230,13 +230,39 @@ body {
 }
 
 @media (max-width: 768px){
+    .buttonMain {
+        height: 20vh;
+    }
+
     .imageCoffeeContainer {
+        /* border: 2px solid red; */
         height: auto;
+        max-height: 1000px;
     }
 
     .imageCoffee {
-        object-fit:cover;
-        height: 50vh;
-        width: 100%;
+        /* border: 2px solid green; */
+        object-fit:contain;
+    }
+
+}
+
+@media (max-width: 576px){
+    .buttonMain {
+        height: 20vh;
+    }
+
+    .textContainer {
+        margin-top: 5vh;
+    }
+
+    .imageCoffeeContainer {
+        margin-top: 5vh;
+    }
+}
+
+@media (max-width: 544px){
+    .textContainer {
+        margin-top: 7vh;
     }
 }
