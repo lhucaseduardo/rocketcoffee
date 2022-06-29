@@ -186,6 +186,10 @@ body {
         display: none;
     }
 
+    .textContainer {
+        margin-top: 1vh;
+    }
+
     .text {
         font-size: 50px;
     }
@@ -234,6 +238,14 @@ body {
         height: 20vh;
     }
 
+    .buttonMain {
+        height: 12vh;
+    }
+
+    .textContainer {
+        margin-top: 1vh;
+    }
+
     .imageCoffeeContainer {
         /* border: 2px solid red; */
         height: auto;
@@ -253,7 +265,7 @@ body {
     }
 
     .textContainer {
-        margin-top: 5vh;
+        margin-top: 4vh;
     }
 
     .imageCoffeeContainer {
@@ -261,8 +273,28 @@ body {
     }
 }
 
-@media (max-width: 544px){
+@media (max-width: 400px){
+    .imageCoffeeContainer {
+        width: 100vw;
+    }
+
+    .imageCoffee {
+        width: 100vw;
+    }
+
+    .imageBlurMobile {
+        width: 100vw;
+    }
+
+    .buttonMain {
+        height: 25vh;
+    }
+
     .textContainer {
-        margin-top: 7vh;
+        margin-top: 10vh;
+    }
+
+    .text {
+        font-size: 40px;
     }
 }
