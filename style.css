@@ -108,6 +108,7 @@ body {
 
 .imageBlurBottom {
     position: absolute;
+    left: 0;
     bottom: 0;
     z-index: -1;
 }
@@ -117,7 +118,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 50vh;
+    height: 52vh;
     /* flex-grow: 1; */
 }
 
@@ -126,7 +127,7 @@ body {
     object-fit: contain;
     height: 100%;
     width: auto;
-    position: relative;
+    /* position: relative; */
 }
 
 .imageBlurMobile {
