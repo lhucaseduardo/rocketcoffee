@@ -107,6 +107,8 @@ body {
 }
 
 .imageBlurBottom {
+    height: 100%;
+    width: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -119,6 +121,7 @@ body {
     align-items: flex-end;
     justify-content: center;
     height: 52vh;
+    width: 100vw;
     /* flex-grow: 1; */
 }
 
