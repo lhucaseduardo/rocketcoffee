@@ -107,10 +107,8 @@ body {
 }
 
 .imageBlurBottom {
-    height: 100%;
     position: absolute;
-    left: 0;
-    bottom: 0;
+    width: 100vw;
     z-index: -1;
 }
 
