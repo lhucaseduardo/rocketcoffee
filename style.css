@@ -118,7 +118,8 @@ body {
     align-items: flex-end;
     justify-content: center;
     width: 100vw;
-    height: 49vh;
+    height: 50vh;
+    margin-bottom: 0;
     /* flex-grow: 1; */
 }
 
