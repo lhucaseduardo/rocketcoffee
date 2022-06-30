@@ -224,6 +224,8 @@ body {
 
     .imageCoffee {
         /* border: 2px solid red; */
+        object-fit: cover;
+        height: auto;
         width: 100%;
     }
 
@@ -231,6 +233,7 @@ body {
         display: block;
         position: absolute;
         width: 100vw;
+        height: 100%;
         z-index: -1;
     }
 
