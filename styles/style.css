@@ -16,6 +16,14 @@ nav {
     display: none;
 }
 
+#burguerOpen {
+    display: none ;
+}
+
+#burguerClosed {
+    display: none ;
+}
+
 .divTextMobile {
     display: none;
 }
@@ -135,6 +143,18 @@ body {
     display: none;
 }
 
+@media (max-width: 5000px){
+    #burguerOpen {
+        display: none;
+    }
+
+    #burguerClosed {
+        display: none;
+    }
+
+
+}
+
 @media (max-width: 997px){
     nav {
         display: none;
@@ -145,6 +165,15 @@ body {
         height: 90px;
         align-items: center;
         justify-content: space-between;
+    }
+
+    #burguerOpen {
+        display: block;
+        margin-right: 20px;
+    }
+
+    #burguerClosed {
+        margin-right: 20px;
     }
 
     .logodiv {
@@ -253,6 +282,9 @@ body {
         margin-top: 1vh;
     }
 
+    .imageBlurMobile {
+    }
+
     .imageCoffeeContainer {
         /* border: 2px solid red; */
         height: auto;
@@ -262,6 +294,7 @@ body {
     .imageCoffee {
         /* border: 2px solid green; */
         object-fit:contain;
+        max-width: 600px;
     }
 
 }
@@ -278,19 +311,42 @@ body {
     .imageCoffeeContainer {
         margin-top: 5vh;
     }
+
+    .imageCoffee {
+        max-width: 400px;
+    }
 }
 
 @media (max-width: 400px){
+    .logoMDiv {
+        height: 30%;
+    }
+
+    .logoMobile {
+    }
+
     .imageCoffeeContainer {
-        width: 100vw;
+        max-width: 800px;
     }
 
     .imageCoffee {
-        width: 100vw;
+        max-width: 320px;
+        margin-top: 5vh;
+    }
+
+    .divTextMobile {
+    }
+
+    .textMobile {
+        min-width: 300px;
+        max-width: 300px;
+        width: 100%;
+        
     }
 
     .imageBlurMobile {
-        width: 100vw;
+        max-height: 650px;
+        width: 100vw; 
     }
 
     .buttonMain {
@@ -299,6 +355,9 @@ body {
 
     .textContainer {
         margin-top: 10vh;
+    }
+
+    .buttonMain {
     }
 
     .text {
