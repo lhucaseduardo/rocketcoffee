@@ -143,18 +143,6 @@ body {
     display: none;
 }
 
-@media (max-width: 5000px){
-    #burguerOpen {
-        display: none;
-    }
-
-    #burguerClosed {
-        display: none;
-    }
-
-
-}
-
 @media (max-width: 997px){
     nav {
         display: none;
