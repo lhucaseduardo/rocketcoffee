@@ -16,6 +16,14 @@ nav {
     display: none;
 }
 
+#siteContent {
+    display: block;
+}
+
+#menuList {
+    display: none
+}
+
 #burguerOpen {
     display: none ;
 }
@@ -155,6 +163,30 @@ body {
         justify-content: space-between;
     }
 
+    #siteContent {
+        display: block;
+    }
+
+    #menuList {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttonMenuList {
+        color: white;
+        font-family: Manrope;
+        font-size: 18;
+        font-weight: 400;
+        border-bottom: 1px solid #29292E;
+        height: 57px;
+        width: 100vw;
+    }
+
+    .borderTop {
+        border-top: 1px solid #29292E;
+    }
+
     #burguerOpen {
         display: block;
         margin-right: 20px;
@@ -270,9 +302,6 @@ body {
         margin-top: 1vh;
     }
 
-    .imageBlurMobile {
-    }
-
     .imageCoffeeContainer {
         /* border: 2px solid red; */
         height: auto;
@@ -310,9 +339,6 @@ body {
         height: 30%;
     }
 
-    .logoMobile {
-    }
-
     .imageCoffeeContainer {
         max-width: 800px;
     }
@@ -320,9 +346,6 @@ body {
     .imageCoffee {
         max-width: 320px;
         margin-top: 5vh;
-    }
-
-    .divTextMobile {
     }
 
     .textMobile {
@@ -343,9 +366,6 @@ body {
 
     .textContainer {
         margin-top: 10vh;
-    }
-
-    .buttonMain {
     }
 
     .text {
